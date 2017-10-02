@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
+import "./../styles/articlecontainer.css"
 import articlesDATA from './../data/articles'
 
 function ArticleContainer() {
   const articles = articlesDATA.articles
   console.log(articles);
   return (
-    <div>
+    <div className="articles__wrapper">
       {articles.map(function (article) {
         return (
           <ArticleContainerUI
@@ -20,7 +21,7 @@ function ArticleContainer() {
 
 function ArticleContainerUI(props) {
   return(
-    <div>
+    <div className="article">
       <h1>{props.title}</h1>
       <p>{props.texte}</p>
     </div>

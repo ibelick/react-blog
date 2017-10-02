@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
+import Header from './Header'
 import articlesDATA from './../data/articles'
+import './../styles/addarticle.css'
 
 class AddArticleForm extends Component {
   constructor(props) {
@@ -40,8 +42,9 @@ class AddArticleForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.addArticle}>
-          <label>
+        <Header />
+        <form onSubmit={this.addArticle} className="fcol write">
+          <label className="fcol">
             Titre:
               <input type="text"
                     value={this.state.title}
@@ -49,7 +52,7 @@ class AddArticleForm extends Component {
                     ref={(a) => this._titleElement = a}
                     id="title"/>
           </label>
-          <label>
+          <label className="fcol">
             Texte:
               <textarea value={this.state.texte}
                         onChange={(e) => this.setState({ texte: e.target.value })}

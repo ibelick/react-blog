@@ -1,0 +1,15 @@
+.write {
+  padding: 0px 50px;
+}
+
+.write input, .write textarea {
+  border: 0;
+  outline: none;
+  height: 50px;
+  font-size: 20px;
+}
+
+.write textarea {
+  margin-top: 20px;
+  resize: vertical; 
+}

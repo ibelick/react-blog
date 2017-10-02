@@ -1,0 +1,36 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.frow {
+  display: flex;
+  flex-direction: row;
+}
+
+.fcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.centerh {
+  display: flex;
+  justify-content: center;
+}
+
+.centerv {
+  display: flex;
+  align-items: center;
+}
+
+.spaceb {
+  display: flex;
+  justify-content: space-between;
+}

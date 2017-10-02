@@ -1,18 +1,19 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './../styles/header.css'
 
 function Home() {
   return (
-    <div>
-      <ul>
+    <header className="centerh centerv">
+      <ul className="frow">
         <li>
-          <Link to="/">React blog</Link>
+          <Link to="/">Blog</Link>
         </li>
         <li>
           <Link to="/new-article">Write</Link>
         </li>
       </ul>
-    </div>
+    </header>
   )
 }
 

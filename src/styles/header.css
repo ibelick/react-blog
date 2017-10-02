@@ -1,0 +1,20 @@
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  height: 90px;
+  min-width: 200px;
+  color: #3373DD;
+}
+
+header ul {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 50px;
+}

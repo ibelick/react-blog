@@ -1,0 +1,11 @@
+.articles__wrapper {
+  padding: 0px 50px;
+}
+
+.articles__wrapper h1 {
+  margin-bottom: 30px;
+}
+
+.article:nth-child(n+2) {
+  margin: 80px 0;
+}
